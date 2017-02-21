@@ -35,12 +35,10 @@ header p {
 }
 
 .pic{
-    height:4.2em;
-    width:4.2em;
-}
+  height:4.2em;
+  width:4.2em;
 
-.pic.loaded {
-  height: 4.2em;
+  transform: translate(-8em, 1.9em);
 }
 
 .profiles {

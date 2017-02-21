@@ -24,19 +24,22 @@
 	</head>
 	<body>
 		<div class="resume-wrapper">
+			{{#resume.basics}}
 			<article class="paper">
-				{{#resume.basics}}
-					<header>
-						<div class="header-content">
-							<div class="header-text">
-								<h2>{{name}}</h2>
-								<p class="subtitle">{{label}}</p>
-							</div>
-						</div>
-					</header>
+				{{#if picture}}
+				<img src="{{picture}}" class="pic" alt="{{name}}" />
+				{{/if}}
 					<div class="content-wrapper">
+						<header>
+							<div class="header-content">
+								<div class="header-text">
+									<h2>{{name}}</h2>
+									<p class="subtitle">{{label}}</p>
+								</div>
+							</div>
+						</header>
 						<!-- CONTACT -->
-						<section class="content">
+						<section class="content top-content">
 							<div class="row">
 								<div class="content-cat">
 								 <h3>Contact</h3>
@@ -69,7 +72,7 @@
 						<!-- LOCATION -->
 						{{#location}}
 							{{#if (or address city)}}
-								<section class="content">
+								<section class="content top-content">
 									<div class="row">
 										<div class="content-cat">
 										 <h3>Location</h3>
@@ -114,7 +117,7 @@
 
 						<!-- LANGUAGE -->
 						{{#if resume.languages.length}}
-						<section class="content">
+						<section class="content top-content">
 							<div class="row">
 								<div class="content-cat">
 								 <h3>Languages</h3>
@@ -143,7 +146,7 @@
 					{{#resume.basics}}
 						<!-- PROFILES for website-->
 						{{#if profiles.length}}
-							<section class="content profiles">
+							<section class="content profiles top-content">
 								<div class="row">
 									<div class="content-cat">
 									 <h3>Profiles</h3>
