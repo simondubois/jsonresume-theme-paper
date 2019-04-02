@@ -218,9 +218,11 @@
 											<h3>Work	Experience</h3>
 									{{/if}}
 
-								 {{#if startDate}}
+									{{#if startDate}}
 										{{#if endDate}}
 											<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">{{endDate}}</span></p>
+										{{else}}
+											<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">Ongoing</span></p>
 										{{/if}}
 									{{/if}}
 
@@ -250,7 +252,36 @@
 											{{/each}}
 										{{/if}}
 
+										{{! consultancy assignments }}
+										{{#if assignments.length}}
+											{{#each assignments}}
+												<section class="assignment">
+													{{#if (and company position)}}
+													{{#if @first}}
+														<p class="small-center first-listing">
+														{{else}}
+														<p class="small-center">
+													{{/if}}
+															{{#if website}}
+																<strong>{{position}}</strong> at <strong><a href="{{website}}" class="no-nl">{{company}}</a></strong>
+															{{else}}
+																<strong>{{position}}</strong> at <strong>{{company}}</strong>
+															{{/if}}
+														</p>
+													{{/if}}
 
+													{{#if summary}}
+														<p>{{summary}}</p>
+													{{/if}}
+
+													{{#if highlights.length}}
+														{{#each highlights}}
+															<p class="highlight">{{.}}</p>
+														{{/each}}
+													{{/if}}
+												</section>
+											{{/each}}
+										{{/if}}
 								</div>
 							</div>
 						</section>
@@ -274,7 +305,9 @@
 
 										{{#if startDate}}
 											{{#if endDate}}
-												<p>{{startDate}} till <span class="no-nl">{{endDate}}</span></p>
+												<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">{{endDate}}</span></p>
+											{{else}}
+												<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">Ongoing</span></p>
 											{{/if}}
 										{{/if}}
 

@@ -69,6 +69,8 @@ header p {
 
 .content-cat {
   width:25%;
+  position: relative;
+  right: 4%;
   color:black;
 }
 
