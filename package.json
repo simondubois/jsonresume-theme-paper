@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "handlebars": ">=4.0.0",
+    "jsonresume-theme-paper": "^0.3.5",
     "resume-cli": "^1.1.2"
   },
   "homepage": "https://github.com/lindell/jsonresume-theme-paper",
