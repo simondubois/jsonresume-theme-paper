@@ -42,76 +42,68 @@
 						<section class="content top-content">
 							<div class="row">
 								<div class="content-cat">
-								 <h3>Contact</h3>
+								 <h3>Kontakt</h3>
 								</div>
 								<div class="content-text">
 									{{#if email}}
 										<ul>
-											<li>Email</li>
+											<li>Epost</li>
 											<li><a href="mailto:{{email}}">{{email}}</a></li>
 										</ul>
 									{{/if}}
 
 									{{#if phone}}
 										<ul>
-											<li>Phone</li>
+											<li>Telefon</li>
 											<li>{{phone}}</li>
 										</ul>
 									{{/if}}
 
 									{{#if website}}
 										<ul>
-											<li>Website</li>
+											<li>Websida</li>
 											<li><a href="{{website}}">{{website}}</a></li>
 										</ul>
 									{{/if}}
+
+                                    {{#location}}
+                                        {{#if (or address city)}}
+
+                                            {{#if address}}
+                                                <ul>
+                                                    <li>Adress</li>
+                                                    <li>{{address}}</li>
+                                                </ul>
+                                            {{/if}}
+
+                                            {{#if country}}
+                                                <ul>
+                                                    <li>Land</li>
+                                                    <li>{{country}}</li>
+                                                </ul>
+                                            {{/if}}
+
+                                            {{#if city}}
+                                                <ul>
+                                                    <li></li>
+                                                    <li>{{postalCode}} {{city}}</li>
+                                                </ul>
+                                            {{/if}}
+
+                                            {{#if region}}
+                                                <ul>
+                                                    <li>Region</li>
+                                                    <li>{{region}}</li>
+                                                </ul>
+                                            {{/if}}
+
+                                        {{/if}}
+                                    {{/location}}
+
 								</div>
 							</div>
 						</section>
 
-						<!-- LOCATION -->
-						{{#location}}
-							{{#if (or address city)}}
-								<section class="content top-content">
-									<div class="row">
-										<div class="content-cat">
-										 <h3>Location</h3>
-										</div>
-										<div class="content-text">
-
-											{{#if address}}
-												<ul>
-													<li>Address</li>
-													<li>{{address}}</li>
-												</ul>
-											{{/if}}
-
-											{{#if country}}
-												<ul>
-													<li>Country</li>
-													<li>{{country}}</li>
-												</ul>
-											{{/if}}
-
-											{{#if city}}
-												<ul>
-													<li>City</li>
-													<li>{{city}}</li>
-												</ul>
-											{{/if}}
-
-											{{#if region}}
-												<ul>
-													<li>Region</li>
-													<li>{{region}}</li>
-												</ul>
-											{{/if}}
-
-										</div>
-									</div>
-								</section>
-							{{/if}}
-						{{/location}}
 					{{/resume.basics}}
 
 
@@ -215,14 +207,14 @@
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 									{{#if @first}}
-											<h3>Work	Experience</h3>
+											<h3><small>Arbetslivserfarenhet</small></h3>
 									{{/if}}
 
 									{{#if startDate}}
 										{{#if endDate}}
 											<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">{{endDate}}</span></p>
 										{{else}}
-											<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">Ongoing</span></p>
+											<p>Från <span class="no-nl">{{startDate}}</span></p>
 										{{/if}}
 									{{/if}}
 
@@ -235,9 +227,9 @@
 											<p class="small-center">
 										{{/if}}
 												{{#if website}}
-													<strong>{{position}}</strong> at <strong><a href="{{website}}" class="no-nl">{{company}}</a></strong>
+													<strong>{{position}}</strong> på <strong><a href="{{website}}" class="no-nl">{{company}}</a></strong>:
 												{{else}}
-													<strong>{{position}}</strong> at <strong>{{company}}</strong>
+													<strong>{{position}}</strong> på <strong>{{company}}</strong>:
 												{{/if}}
 											</p>
 										{{/if}}
@@ -300,14 +292,14 @@
 									<div class="content-cat big-text">
 
 										{{#if @first}}
-											<h3>Education</h3>
+											<h3>Utbildning</h3>
 										{{/if}}
 
 										{{#if startDate}}
 											{{#if endDate}}
 												<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">{{endDate}}</span></p>
 											{{else}}
-												<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">Ongoing</span></p>
+												<p>Från <span class="no-nl">{{startDate}}</span></p>
 											{{/if}}
 										{{/if}}
 
@@ -482,7 +474,7 @@
 						<section class="content">
 							<div class="row">
 								<div class="content-cat">
-									<h3>Skills</h3>
+									<h3>Kunskaper</h3>
 								</div>
 								<div class="content-text skills-listing">
 									{{#each resume.skills}}
@@ -514,7 +506,7 @@
 						<section class="content">
 							<div class="row">
 								<div class="content-cat">
-									<h3>Interests</h3>
+									<h3>Intressen</h3>
 								</div>
 								<div class="content-text skills-listing">
 									{{#each resume.interests}}

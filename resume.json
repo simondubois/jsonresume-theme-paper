@@ -1,0 +1,185 @@
+{
+    "basics": {
+        "name": "Delphine Duban",
+        "label": "",
+        "picture": "",
+        "email": "delphine@dubandubois.com",
+        "phone": "070 480 33 10",
+        "summary": "",
+        "location": {
+            "address": "Västerslöv 2046",
+            "postalCode": "289 50",
+            "city": "Hanaskog",
+            "countryCode": "",
+            "region": ""
+        }
+    },
+    "work": [
+        {
+            "company": "Sölvesborgs kommun, Sverige ",
+            "position": "Modersmålslärare i franska",
+            "startDate": "2019-11-19",
+            "endDate": "",
+            "summary": "5 elever - från åk 1 till åk 6",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "company": "Älmhults kommun, Sverige ",
+            "position": "Modersmålslärare i franska",
+            "startDate": "2019-10-04",
+            "endDate": "",
+            "summary": "16 elever - från åk 1 till åk 8",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "company": "GRAM Förpakningsfri mataffär - Malmö, Sverige ",
+            "position": "Volontär",
+            "website": "https://grammalmo.se/sv/",
+            "startDate": "2019-04-28",
+            "endDate": "",
+            "summary": "Välkommen och råd till kunder, kassahantering, påfyllning behållare",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "company": "Association AIDA - Nord, Frankrike",
+            "position": "Praktikant",
+            "website": "",
+            "startDate": "2015-03-01",
+            "endDate": "2016-05-31",
+            "summary": "Mottagande av asylsökande, utarbetande av handlingar för asylansökningar.",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "company": "Solidarités Jeunesses - Auvergne, Frankrike",
+            "position": "Regional delegat",
+            "website": "https://www.solidaritesjeunesses.org/",
+            "startDate": "2012-03-01",
+            "endDate": "2014-06-30",
+            "summary": "Ansvarig för ett internationellt frivilligt mottagningscenter, leda frivilliga och lagmöten, skapa och utveckla projekt, söka finansiering, skriva arbetspapper.",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "company": "Générations et Cultures - Nord, Frankrike",
+            "position": "Koordinator och projektledare",
+            "website": "https://www.generationsetcultures.fr",
+            "startDate": "2008-06-01",
+            "endDate": "2011-01-31",
+            "summary": "Leda frivilliga möten, skapa och utveckla projekt, söka finansiering, skriva arbetspapper",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        }
+        
+    
+    ],
+    "education": [
+        {
+            "institution": "Universitet av Lyon - Frankrike",
+            "area": "Utlänningars rättighet",
+            "studyType": "Diplôme Universitaire",
+            "startDate": "2015-09-25",
+            "endDate": "2016-06-15"
+        },
+        {
+            "institution": "Universitet av Valenciennes - Frankrike",
+            "area": "Solidarisk ekonomi",
+            "studyType": "Magister",
+            "startDate": "1994-09-01",
+            "endDate": "2001-06-01"
+        },
+        {
+            "institution": "Institution Saint Michel, Solesmes - Frankrike",
+            "area": "Litteratur och språk",
+            "studyType": "Baccalauréat",
+            "startDate": "1993-09-01",
+            "endDate": "1994-06-30"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Franska",
+            "keywords": [
+                "Modersmål"
+            ]
+        },
+        {
+            "name": "Engelska",
+            "keywords": [
+                "Mycket goda kunskaper - Engelska 6 (C betyg)"
+            ]
+        },
+        {
+            "name": "Svenska",
+            "keywords": [
+                "Mycket goda kunskaper - Svenska som andraspråk 2 (B betyg)"
+            ]
+        },
+        {
+            "name": "Spanska",
+            "keywords": [
+                "Goda kunskaper"
+            ]
+        },
+        {
+            "name": "Datorvana",
+            "level": "",
+            "keywords": [
+                "Windows",
+                "OSX",
+                "Ubuntu"
+            ]
+        },
+        {
+            "name": "Mjukvara",
+            "level": "",
+            "keywords": [
+                "Microsoft Office (Word, Excel, Power Point)",
+                "Libre Office",
+                "Thunderbird"
+            ]
+        }
+    ],
+    "languages": [],
+    "interests": [
+        {
+            "name": "",
+            "keywords": [
+                "Läsa och skriva",
+                "ekologi",
+                "reser"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "Ebru Bue, rektor - Association AIDA, Lille",
+            "reference": "+33 3 20 06 79 80"
+        },
+        {
+            "name": "Matina Deligliani, national delegat - Solidarités Jeunesses, Paris",
+            "reference": "+33 1 55 26 88 77"
+        }
+    ]
+}
