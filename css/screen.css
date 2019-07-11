@@ -38,7 +38,7 @@
   }
 
   .work-listing .first-listing{
-    margin-top: 0.45em;
+    margin-top: 0.45em !important;
   }
 
   .work-listing .small-center{

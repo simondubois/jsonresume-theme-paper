@@ -45,13 +45,6 @@
 								 <h3>Contact</h3>
 								</div>
 								<div class="content-text">
-									{{#if email}}
-										<ul>
-											<li>Email</li>
-											<li><a href="mailto:{{email}}">{{email}}</a></li>
-										</ul>
-									{{/if}}
-
 									{{#if phone}}
 										<ul>
 											<li>Phone</li>
@@ -59,89 +52,35 @@
 										</ul>
 									{{/if}}
 
+									{{#if email}}
+										<ul>
+											<li>Email</li>
+											<li><a href="mailto:{{email}}">{{email}}</a></li>
+										</ul>
+									{{/if}}
+
 									{{#if website}}
 										<ul>
 											<li>Website</li>
-											<li><a href="{{website}}">{{website}}</a></li>
+											<li><a href="{{website}}">{{#no-http}}{{website}}{{/no-http}}</a></li>
 										</ul>
 									{{/if}}
+
+                                    <!-- LOCATION -->
+                                    {{#location}}
+                                        {{#if (or address city)}}
+                                            <ul>
+                                                <li>Address</li>
+                                                <li>{{address}}, {{city}}</li>
+                                            </ul>
+                                        {{/if}}
+                                    {{/location}}
+
 								</div>
 							</div>
 						</section>
 
-						<!-- LOCATION -->
-						{{#location}}
-							{{#if (or address city)}}
-								<section class="content top-content">
-									<div class="row">
-										<div class="content-cat">
-										 <h3>Location</h3>
-										</div>
-										<div class="content-text">
-
-											{{#if address}}
-												<ul>
-													<li>Address</li>
-													<li>{{address}}</li>
-												</ul>
-											{{/if}}
-
-											{{#if country}}
-												<ul>
-													<li>Country</li>
-													<li>{{country}}</li>
-												</ul>
-											{{/if}}
-
-											{{#if city}}
-												<ul>
-													<li>City</li>
-													<li>{{city}}</li>
-												</ul>
-											{{/if}}
-
-											{{#if region}}
-												<ul>
-													<li>Region</li>
-													<li>{{region}}</li>
-												</ul>
-											{{/if}}
-
-										</div>
-									</div>
-								</section>
-							{{/if}}
-						{{/location}}
 					{{/resume.basics}}
-
-
-						<!-- LANGUAGE -->
-						{{#if resume.languages.length}}
-						<section class="content top-content">
-							<div class="row">
-								<div class="content-cat">
-								 <h3>Languages</h3>
-								</div>
-								<div class="content-text">
-
-									{{#each resume.languages}}
-										<ul>
-
-											{{#if language}}
-												<li>{{language}}</li>
-											{{/if}}
-
-											{{#if fluency}}
-											<li>{{fluency}}</li>
-											{{/if}}
-
-										</ul>
-									{{/each}}
-
-								</div>
-							</div>
-						</section>
-						{{/if}}
 
 					{{#resume.basics}}
 						<!-- PROFILES for website-->
@@ -235,7 +174,7 @@
 											<p class="small-center">
 										{{/if}}
 												{{#if website}}
-													<strong>{{position}}</strong> at <strong><a href="{{website}}" class="no-nl">{{company}}</a></strong>
+													<strong>{{position}}</strong> at <strong><a href="{{website}}" target="_blank" class="no-nl">{{company}}</a></strong>
 												{{else}}
 													<strong>{{position}}</strong> at <strong>{{company}}</strong>
 												{{/if}}
@@ -400,7 +339,7 @@
 												<p class="small-center">
 											{{/if}}
 											{{#if website}}
-												<strong>{{role}}</strong> <span class="no-nl">of <strong><a href="{{website}}">{{name}}</a></strong></span>
+												<strong>{{role}}</strong> <span class="no-nl">of <strong><a href="{{website}}" target="_blank">{{name}}</a></strong></span>
 											{{else}}
 												<strong>{{role}}</strong> <span class="no-nl">of <strong>{{name}}</strong></span>
 											{{/if}}
@@ -501,7 +440,7 @@
 										{{/if}}
 
 											{{#if keywords.length}}
-												{{#commalist keywords}}{{.}}{{/commalist}}
+												{{#commalist keywords}}{{.}}{{/commalist}}.
 											{{/if}}
 										</p>
 									{{/each}}
@@ -509,6 +448,36 @@
 							</div>
 						</section>
 					{{/if}}
+
+						<!-- LANGUAGE -->
+						{{#if resume.languages.length}}
+						<section class="content top-content">
+							<div class="row">
+								<div class="content-cat">
+								 <h3>Languages</h3>
+								</div>
+								<div class="content-text skills-listing">
+
+									{{#each resume.languages}}
+										<p>
+										<span class="name">
+											{{#if language}}
+    											<strong>
+												    {{language}}:
+    											</strong>
+											{{/if}}
+
+											{{#if fluency}}
+											    {{fluency}}.
+											{{/if}}
+
+										</p>
+									{{/each}}
+
+								</div>
+							</div>
+						</section>
+						{{/if}}
 
 					{{#if resume.interests.length}}
 						<section class="content">
@@ -527,7 +496,7 @@
 										{{/if}}
 										</span>
 											{{#if keywords.length}}
-												{{#commalist keywords}}{{.}}{{/commalist}}
+												{{#commalist keywords}}{{.}}{{/commalist}}.
 											{{/if}}
 										</p>
 									{{/each}}

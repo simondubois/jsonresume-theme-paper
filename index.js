@@ -14,7 +14,12 @@ function render(resume) {
 
 	// Remove http and www from url
 	Handlebars.registerHelper('no-http', function(options) {
-		this.url = this.url.replace(/(https?:\/\/)?(www\.)?/, "");
+        if (this.url) {
+            this.url = this.url.replace(/(https?:\/\/)?(www\.)?/, "");
+        }
+        if (this.website) {
+            this.website = this.website.replace(/(https?:\/\/)?(www\.)?/, "");
+        }
 		return options.fn(this);
 	});
 

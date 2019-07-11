@@ -1,0 +1,159 @@
+{
+    "basics": {
+        "picture": "https://avatars0.githubusercontent.com/u/9416595?s=460&v=4",
+        "name": "Simon Dubois",
+        "label": "Full Stack Web Developer",
+        "email": "simon@dubandubois.com",
+        "website": "https://github.com/simondubois",
+        "location": {
+            "address": "Västerslöv 2046",
+            "postalCode": "28950",
+            "city": "Hanaskog"
+        }
+    },
+    "work": [
+        {
+            "startDate": "january 2018",
+            "endDate": "december 2019",
+            "position": "Team leader",
+            "company": "ExaktaSoftware (SE)",
+            "website": "https://www.exaktasoftware.se",
+            "highlights": [
+                "Tech lead: technical choices, team workflow, define & estimate tasks.",
+                "HRM: recruitment, onboarding, training, individual coaching.",
+                "Interface between developers, upper managers, sellers and customers."
+            ]
+        },
+        {
+            "startDate": "june 2016",
+            "endDate": "december 2019",
+            "position": "Full Stack Web Developer",
+            "company": "ExaktaSoftware (SE)",
+            "website": "https://www.exaktasoftware.se",
+            "highlights": [
+                "Design, development & support for SPA, management systems & websites.",
+                "Use of backend & frontend frameworks. Experience in production.",
+                "Work independently, including project management and customer relations."
+            ]
+        },
+        {
+            "company": "Pimenteo (FR)",
+            "position": "Full Stack Web Developer",
+            "startDate": "may 2014",
+            "endDate": "june 2016",
+            "highlights": [
+                "Design, development & support for legacy systems & websites.",
+                "Use of backend & frontend frameworks. Experience in production.",
+                "Work independently, including project management and customer relations."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Jönköping University (SE)",
+            "area": "Information Engineering and Management.",
+            "studyType": "Master Degree in Informatics",
+            "startDate": "2011",
+            "endDate": "2013"
+        },
+        {
+            "institution": "EPITECH Lille (FR)",
+            "area": "learning by doing in C, C++, PHP... and more!",
+            "studyType": "Bachelor of Computer Science",
+            "startDate": "2008",
+            "endDate": "2011"
+        }
+    ],
+    "opensource": [
+        {
+            "startDate": "august 2019",
+            "endDate": "now",
+            "role": "Maintainer",
+            "name": "Bookkeeping with envelope system",
+            "website": "https://github.com/simondubois/budget",
+            "highlights": [
+                "Budget system with multi currency and history in a responsive SPA with REST API.",
+                "Built with : Laravel 6, Vuejs 2.5, Bootswatch 4."
+            ]
+        },
+        {
+            "startDate": "february 2019",
+            "endDate": "now",
+            "role": "Maintainer",
+            "name": "One picture a day in your web browser",
+            "website": "https://github.com/simondubois/photos",
+            "highlights": [
+                "Daily, monthly and annual browsing of pictures in a light & responsive SPA.",
+                "Built with : Laravel Lumen 6, Vuejs 2.5, Bootswatch 4."
+            ]
+        },
+        {
+            "startDate": "may 2019",
+            "endDate": "now",
+            "role": "Maintainer",
+            "name": "Simple file-based podcast publisher",
+            "website": "https://github.com/simondubois/podcast",
+            "highlights": [
+                "Render audio file collection into a RSS feed and a webpage for online listening.",
+                "Built with : Laravel Lumen 6, Bootswatch 4."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Backend",
+            "keywords": [
+                "PHP 5 & 7",
+                "Laravel 5 & 6",
+                "MySQL",
+                "Symfony Console",
+                "Bash"
+            ]
+        },
+        {
+            "name": "Frontend",
+            "keywords": [
+                "Javascript",
+                "VueJS",
+                "jQuery",
+                "Sass",
+                "Bootstrap",
+                "HTML5 & CSS3"
+            ]
+        },
+        {
+            "name": "Tools",
+            "keywords": [
+                "Git & Github",
+                "Apache",
+                "PHPUnit & Blackfire",
+                "Docker",
+                "Visual Sudio Code"
+            ]
+        },
+        {
+            "name": "Qualities",
+            "keywords": [
+                "business oriented",
+                "voluntary",
+                "helpful",
+                "organized",
+                "coherent"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Fluent"
+        },
+        {
+            "language": "Swedish",
+            "fluency": "B2 / Grundläggande nivå Svenska"
+        },
+        {
+            "language": "French",
+            "fluency": "Native language"
+        }
+    ]
+}
