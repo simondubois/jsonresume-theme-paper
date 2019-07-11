@@ -1,0 +1,189 @@
+{
+    "basics": {
+        "name": "Delphine Duban",
+        "label": "",
+        "picture": "",
+        "email": "delphine@dubandubois.com",
+        "phone": "0046 70 480 33 10",
+        "summary": "",
+        "location": {
+            "address": "Västerslöv 2046",
+            "postalCode": "289 50",
+            "city": "Hanaskog - Suède",
+            "countryCode": "",
+            "region": ""
+        }
+    },
+    "work": [
+        {
+            "company": "Communauté de communes de Kristiasntad, Suède ",
+            "position": "Professeur de français langue maternelle",
+            "startDate": "Janvier 2020",
+            "endDate": "",
+            "summary": "12 élèves - du CE1 à la 3ème",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "company": "Communauté de communes de Sölvesborg, Suède ",
+            "position": "Professeur de français langue maternelle",
+            "startDate": "November 2019",
+            "endDate": "juin 2021",
+            "summary": "5 élèves - du CE1 à la 5ème",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "company": "Communauté de communes de Älmhult, Suède ",
+            "position": "Professeur de français langue maternelle",
+            "startDate": "Octobre 2019",
+            "endDate": "juin 2020",
+            "summary": "16 élèves - du CE1 à la 3ème",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "company": "GRAM magasin de vrac - Malmö, Suède ",
+            "position": "Bénévole",
+            "website": "https://grammalmo.se/sv/",
+            "startDate": "Avril 2019",
+            "endDate": "",
+            "summary": "Accueil et conseil aux clients, caisse, mise en rayon.",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "company": "Association AIDA - Nord, France",
+            "position": "Stagiaire",
+            "website": "",
+            "startDate": "Mars 2015",
+            "endDate": "mai 2016",
+            "summary": "Rencontre des demandeurs d'asile, rédaction des demandes d'asile.",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "company": "Solidarités Jeunesses - Auvergne, France",
+            "position": "Déléguée Régionale",
+            "website": "https://www.solidaritesjeunesses.org/",
+            "startDate": "Mars 2012",
+            "endDate": "juin 2014",
+            "summary": "Responsable du centre d'accueil international de volontaires, mise en place et animation de réunions de bénévoles et de salariés, création et développement de projets, recherche de financements.",
+            "highlights": [
+                "",
+                "",
+                ""
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Université de Lund - Suède",
+            "area": "Études de langues (Français, Espagnol)",
+            "studyType": "",
+            "startDate": "Janvier 2021",
+            "endDate": "aujourd'hui"
+        },
+        {
+            "institution": "Université de Lyon - France",
+            "area": "Droit des ètrangers",
+            "studyType": "Diplôme Universitaire",
+            "startDate": "Juin 2016",
+            "endDate": ""
+        },
+        {
+            "institution": "Université de Valenciennes - France",
+            "area": "Développement local et économie solidaire",
+            "studyType": "Magister",
+            "startDate": "Septembre 1994",
+            "endDate": "juin 2001"
+        },
+        {
+            "institution": "Institution Saint Michel, Solesmes - France",
+            "area": "Litterature et langues",
+            "studyType": "Baccalauréat",
+            "startDate":"Juin 1994",
+            "endDate": ""
+        }
+    ],
+    "skills": [
+        {
+            "name": "Français",
+            "keywords": [
+                "Langue maternelle"
+            ]
+        },
+        {
+            "name": "Anglais",
+            "keywords": [
+                "Très bon niveau"
+            ]
+        },
+        {
+            "name": "Suédois",
+            "keywords": [
+                "Très bon niveau"
+            ]
+        },
+        {
+            "name": "Espagnol",
+            "keywords": [
+                "Bon niveau"
+            ]
+        },
+        {
+            "name": "Compétences informatiques",
+            "level": "",
+            "keywords": [
+                "Windows",
+                "OSX",
+                "Ubuntu"
+            ]
+        },
+        {
+            "name": "Logiciels",
+            "level": "",
+            "keywords": [
+                "Microsoft Office (Word, Excel, Power Point)",
+                "Libre Office",
+                "Thunderbird"
+            ]
+        }
+    ],
+    "languages": [],
+    "interests": [
+        {
+            "name": "",
+            "keywords": [
+                "Lecture et écriture",
+                "écologie et astronomie",
+                "voyages"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "Ebru Bue, rektor - Association AIDA, Lille",
+            "reference": "+33 3 20 06 79 80"
+        },
+        {
+            "name": "Matina Deligliani, national delegat - Solidarités Jeunesses, Paris",
+            "reference": "+33 1 55 26 88 77"
+        }
+    ]
+}
