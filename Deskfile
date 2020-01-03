@@ -1,0 +1,29 @@
+#/bin/bash
+
+export PATH=$PATH:./vendor/bin:./node_modules/.bin
+export HISTFILE=$HOME/.bash_history_jsonresume-theme-paper
+touch $HISTFILE
+
+function dev-install {
+    # git clone git@github.com:simondubois/jsonresume-theme-paper.git ./
+    npm install
+}
+
+function delphine-run {
+    git checkout delphine && resume serve
+}
+
+function simon-run {
+    git checkout simon && resume serve
+}
+
+function simon-deploy {
+    git checkout simon
+    resume serve -s &
+    PID=$!
+    sleep 1
+    curl -s --output /dev/null http://localhost:4000/
+    kill $PID
+    scp public/index.html $DESK_JSONRESUMETHEMEPAPER_SIMON_HOST:$DESK_JSONRESUMETHEMEPAPER_SIMON_PATH
+    open $DESK_JSONRESUMETHEMEPAPER_SIMON_URL
+}
