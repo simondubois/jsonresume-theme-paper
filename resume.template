@@ -45,17 +45,15 @@
 								 <h3>Kontakt</h3>
 								</div>
 								<div class="content-text">
-									{{#if email}}
+									{{#if phone}}
 										<ul>
-											<li>Epost</li>
-											<li><a href="mailto:{{email}}">{{email}}</a></li>
+											<li>{{phone}}</li>
 										</ul>
 									{{/if}}
 
-									{{#if phone}}
+									{{#if email}}
 										<ul>
-											<li>Telefon</li>
-											<li>{{phone}}</li>
+											<li><a href="mailto:{{email}}">{{email}}</a></li>
 										</ul>
 									{{/if}}
 
@@ -71,7 +69,6 @@
 
                                             {{#if address}}
                                                 <ul>
-                                                    <li>Adress</li>
                                                     <li>{{address}}</li>
                                                 </ul>
                                             {{/if}}
@@ -85,7 +82,6 @@
 
                                             {{#if city}}
                                                 <ul>
-                                                    <li></li>
                                                     <li>{{postalCode}} {{city}}</li>
                                                 </ul>
                                             {{/if}}
@@ -227,9 +223,9 @@
 											<p class="small-center">
 										{{/if}}
 												{{#if website}}
-													<strong>{{position}}</strong> på <strong><a href="{{website}}" class="no-nl">{{company}}</a></strong>:
+													<strong>{{position}}</strong>, <strong><a href="{{website}}" class="no-nl">{{company}}</a></strong>
 												{{else}}
-													<strong>{{position}}</strong> på <strong>{{company}}</strong>:
+													<strong>{{position}}</strong>, <strong>{{company}}</strong>
 												{{/if}}
 											</p>
 										{{/if}}
